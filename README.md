@@ -1,6 +1,6 @@
-# rave-ng
+# rave-angular
 
-rave-ng is a RaveJS extension that integrates AngularJS into your rave
+rave-angular is a RaveJS extension that integrates AngularJS into your rave
 application.
 
 ##Usage
@@ -8,13 +8,13 @@ application.
 This is all that is required to start using this extension in your RaveJS app:
 
 ```
-npm install --save rave-ng
+npm install --save rave-angular
 ```
 
 or:
 
 ```
-bower install --save rave-ng
+bower install --save rave-angular
 ```
 
 ## Testing

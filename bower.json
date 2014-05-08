@@ -1,5 +1,5 @@
 {
-	"name": "rave-ng",
+	"name": "rave-angular",
 	"version": "0.0.1",
 	"description": "Integrates AngularJS into RaveJS.",
 	"main": "rave.js",
@@ -20,7 +20,7 @@
 		"angularjs"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/unscriptable/rave-ng",
+	"homepage": "https://github.com/unscriptable/rave-angular",
 	"authors": [
 		"John Hann (http://unscriptable.com)",
 		"Brian Cavalier (http://hovercraftstudios.com)"
