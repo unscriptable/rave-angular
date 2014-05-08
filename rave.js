@@ -5,6 +5,13 @@
 require('angular');
 require('angular-route');
 
+//var es5Transform = require('rave/lib/es5Transform');
+
+var angular = typeof global !== 'undefined'
+	? global.angular
+	: typeof window !== 'undefined' ? window.angular
+	: void 0;
+
 exports.create = create;
 
 if (typeof angular === 'undefined') {
