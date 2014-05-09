@@ -22,5 +22,7 @@ else if (!angular.isDefined('ngRoute')) {
 }
 
 function create (context) {
-	// nothing to do
+	// TODO: devs shouldn't have to deal with the internal unique ids
+	context.loader.set("angular@1.2.16#angular/angular.js", new Module(angular));
+	context.loader.set("angular-route@1.2.16#angular-route/angular-route.js", new Module(angular.module('ngRoute')));
 }
