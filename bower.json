@@ -4,7 +4,7 @@
 	"description": "Integrates AngularJS into RaveJS.",
 	"main": "rave.js",
 	"dependencies": {
-		"rave": "~0.1",
+		"rave": "~0.2",
 		"angular": "~v1.2",
 		"angular-route": "~v1.2"
 	},
