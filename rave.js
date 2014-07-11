@@ -5,7 +5,7 @@
 require('angular');
 require('angular-route');
 
-//var es5Transform = require('rave/lib/es5Transform');
+var uid = require('rave/lib/uid');
 
 var angular = typeof global !== 'undefined'
 	? global.angular
@@ -23,6 +23,16 @@ else if (!angular.isDefined('ngRoute')) {
 
 function create (context) {
 	// TODO: devs shouldn't have to deal with the internal unique ids
-	context.loader.set("angular@1.2.16#angular/angular.js", new Module(angular));
-	context.loader.set("angular-route@1.2.16#angular-route/angular-route.js", new Module(angular.module('ngRoute')));
+	var main;
+	main = getUid(context, 'angular');
+	context.loader.set(main, new Module(angular));
+	main = getUid(context, 'angular-route');
+	context.loader.set(main, new Module(angular.module('ngRoute')));
+}
+
+function getUid (context, pkgName) {
+	var pkgUid, pkg;
+	pkgUid = context.packages[pkgName].uid;
+	pkg = context.packages[pkgUid];
+	return uid.create(pkg, pkgName + '/' + pkgName);
 }
