@@ -1,10 +1,10 @@
 {
 	"name": "rave-angular",
-	"version": "0.2.0",
+	"version": "0.4.0",
 	"description": "Integrates AngularJS into RaveJS.",
 	"main": "rave.js",
 	"dependencies": {
-		"rave": "~0.2",
+		"rave": "~0.4",
 		"angular": "~v1.2",
 		"angular-route": "~v1.2"
 	},
